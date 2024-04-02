@@ -1,18 +1,18 @@
 {% extends 'layout.html' %}
-
+{% load static %}
 {% block content %}
 
 
     <div class="row">
         <div class="col-md-12">
-            <h1> Resume App</h1>
+            <h1 class="myHeader"> Resume App</h1>
         </div>
     </div>
     <p>
         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquid consequuntur dolorem ea error est, eum hic maiores minima molestiae molestias nobis non optio quibusdam reiciendis rem sit tenetur.</span><span>Alias blanditiis dicta eligendi esse in magni numquam odio praesentium quidem reprehenderit sequi similique vitae, voluptates? Consequatur culpa cupiditate dolorem, dolorum eligendi nisi odio, perferendis qui quia, saepe ullam veritatis?</span><span>Ab alias delectus fuga, in, maxime modi neque possimus ratione repellat repellendus sit ullam. Accusamus amet, at cumque delectus eligendi est fugiat harum id illo laboriosam modi neque sed sunt!</span><span>Ad animi beatae doloribus ea eaque et hic in ipsa magnam maiores neque, porro quia reiciendis reprehenderit repudiandae soluta totam! Amet impedit laborum nisi non placeat possimus, quas reprehenderit soluta?</span><span>Ab animi dignissimos ea excepturi, exercitationem fuga incidunt inventore magni natus nihil nobis non nulla odio omnis placeat quisquam ratione reiciendis repellendus repudiandae saepe sint, tempora ut veniam voluptatem voluptates!</span><span>Accusantium aspernatur dicta facilis labore maxime nam obcaecati, repellat repudiandae sit voluptates? Aspernatur delectus dignissimos ducimus, ex itaque laborum molestias, natus nostrum odit officiis optio repellat similique sit tempore, voluptates!</span><span>Alias atque deleniti eaque eius error nesciunt officia quae quidem reiciendis vitae! Accusantium ad aliquam commodi delectus, doloremque, hic impedit labore magnam mollitia nam nesciunt obcaecati quaerat quo sint voluptatem.</span><span>A accusamus ad adipisci aperiam deserunt dignissimos doloribus, ea eius eum, eveniet illum incidunt ipsa itaque laboriosam natus odio quibusdam quos reiciendis sint ullam velit veniam voluptas. Harum, obcaecati optio.</span><span>Animi consequatur fugiat nam quas temporibus vitae voluptatibus! Asperiores assumenda aut consequuntur culpa doloremque dolores ducimus eius enim et iste iure magnam, mollitia odit quos sed similique velit voluptates voluptatum.</span><span>Animi, laudantium, nobis? Amet consequatur cupiditate error esse fuga, incidunt iste iusto numquam odio quo, sunt veritatis! Aut dignissimos error perferendis, porro quibusdam quod tempora veritatis. Ex neque rem repellendus!</span>
     </p>
     <div class="card" style="width: 18rem;">
-        <img src="https://placehold.co/450x300.png" class="card-img-top" alt="...">
+        <img src="{% get_media_prefix %}card.png" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
@@ -20,15 +20,15 @@
             <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
     </div>
-    </div>
+   
 
 
 {% endblock %}
 {% block extra_scripts %}
 
     <script>
-    console.log('Hello world');
+        console.log('Hello world');
     </script>
-    
-    
+
+
 {% endblock %}
